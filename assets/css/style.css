@@ -1,0 +1,175 @@
+/* ==========================================================================
+   OXYGEN HOMES - LUXURY REAL ESTATE STYLESHEET
+   Aesthetics: Deep Emerald, Obsidian Slate, Warm Champagne & Brushed Gold
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --color-primary: #0A140F;
+  --color-surface: #101E17;
+  --color-surface-card: #15271E;
+  --color-surface-hover: #1B3227;
+  --color-gold: #C5A880;
+  --color-gold-light: #E7D5B8;
+  --color-gold-dark: #9E7D53;
+  --color-emerald: #10B981;
+  --color-emerald-glow: rgba(16, 185, 129, 0.2);
+  --color-gold-glow: rgba(197, 168, 128, 0.25);
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-display: 'Cinzel', serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-primary);
+  color: #E2E8F0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, .font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0A140F;
+}
+::-webkit-scrollbar-thumb {
+  background: #233A2E;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold);
+}
+
+/* Luxury Gold & Emerald Gradients */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #F3E7D3 0%, #C5A880 50%, #9E7D53 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #DFCEB4 0%, #C5A880 50%, #9E7D53 100%);
+}
+
+.bg-emerald-gradient {
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+}
+
+.border-gold-subtle {
+  border-color: rgba(197, 168, 128, 0.25);
+}
+
+.border-gold-glow {
+  box-shadow: 0 0 25px rgba(197, 168, 128, 0.15);
+}
+
+/* Glassmorphism Card */
+.glass-card {
+  background: rgba(16, 30, 23, 0.75);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(197, 168, 128, 0.18);
+}
+
+.glass-card-hover {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-card-hover:hover {
+  transform: translateY(-4px);
+  background: rgba(21, 39, 30, 0.9);
+  border-color: rgba(197, 168, 128, 0.45);
+  box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(197, 168, 128, 0.12);
+}
+
+.glass-nav {
+  background: rgba(10, 20, 15, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(197, 168, 128, 0.15);
+}
+
+/* Shimmer & Glow Animations */
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.btn-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+.btn-shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transform: translateX(-100%);
+  animation: shimmer 3.5s infinite;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.15); opacity: 0.2; }
+  100% { transform: scale(0.95); opacity: 0.8; }
+}
+
+.pulse-ring {
+  animation: pulse-ring 2.5s infinite ease-in-out;
+}
+
+/* Modals */
+.modal-backdrop {
+  background: rgba(5, 10, 8, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Image zoom in frame */
+.img-zoom-container {
+  overflow: hidden;
+}
+.img-zoom-container img {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.img-zoom-container:hover img {
+  transform: scale(1.06);
+}
+
+/* Active tab style */
+.tab-active {
+  background: linear-gradient(135deg, #DFCEB4 0%, #C5A880 50%, #9E7D53 100%) !important;
+  color: #0A140F !important;
+  font-weight: 700 !important;
+  box-shadow: 0 4px 15px rgba(197, 168, 128, 0.3) !important;
+}
+
+/* Lead ticker */
+.ticker-slide-in {
+  animation: slideInUp 0.4s ease forwards;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
