@@ -1,6 +1,10 @@
 # 🏡 Oxygen Homes — Ultra-Luxury Real Estate Landing Page
 
+> 🌐 **Live Website:** [https://oxygenhomes.vercel.app/](https://oxygenhomes.vercel.app/)
+
 A high-converting, luxury-aesthetic web application designed for **Oxygen Homes** in North-West Hyderabad (Bachupally & Pragathi Nagar). Engineered with architectural elegance, frictionless lead capture funnels, and real estate marketing automation.
+
+[![Live Demo](https://img.shields.io/badge/Live_Demo-oxygenhomes.vercel.app-10B981?style=for-the-badge&logo=vercel&logoColor=white)](https://oxygenhomes.vercel.app/)
 
 ![Oxygen Homes Preview](assets/images/Night-View-Oxygen-Pearl.webp)
 
@@ -8,6 +12,7 @@ A high-converting, luxury-aesthetic web application designed for **Oxygen Homes*
 
 ## 🌟 Key Highlights & Fetched Details
 
+- **Live Production URL:** [https://oxygenhomes.vercel.app/](https://oxygenhomes.vercel.app/)
 - **Official Project Location:** [Oxygen Homes Experience Centre, Pragathi Nagar / Bachupally, Hyderabad](https://maps.app.goo.gl/fKTbFS54ejikUcjLA)
 - **Flagship Projects:**
   - **Oxygen City:** 99 Signature Triplex Luxury Villas (G+2, 168 & 200 Sq. Yds., East & West facing) in Mallampet – Bachupally.
@@ -40,6 +45,11 @@ A high-converting, luxury-aesthetic web application designed for **Oxygen Homes*
 
 ## 🚀 Live Preview & Deployment
 
+### Production Deployment (Vercel)
+The production version is deployed live at:
+👉 **[https://oxygenhomes.vercel.app/](https://oxygenhomes.vercel.app/)**
+
+### Local Preview
 To run locally:
 ```bash
 # Python simple server
@@ -47,7 +57,7 @@ python -m http.server 8080
 ```
 Open [http://localhost:8080](http://localhost:8080) in your browser.
 
-Deployable directly to **GitHub Pages**, **Vercel**, **Netlify**, or **AWS S3 / CloudFront**.
+Deployable seamlessly on **Vercel**, **GitHub Pages**, **Netlify**, or **AWS S3 / CloudFront**.
 
 ---
 
